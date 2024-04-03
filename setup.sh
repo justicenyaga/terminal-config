@@ -26,7 +26,7 @@ fi
 cp "$(pwd)/accels.scm" "$terminal_dir"
 
 # Generate the terminalrc config file
-background_image="$(pwd)/background-1.jpg"
+background_image="$(pwd)/images/background-5.jpg"
 cat > "$terminal_dir/terminalrc" <<EOF
 [Configuration]
 FontName=CodeNewRoman Nerd Font Mono 14
@@ -64,7 +64,7 @@ ColorPalette=rgb(21,37,53);rgb(255,60,60);rgb(73,255,109);rgb(255,188,81);rgb(0,
 BackgroundMode=TERMINAL_BACKGROUND_IMAGE
 BackgroundDarkness=0.850000
 BackgroundImageFile=$background_image
-BackgroundImageShading=0.780000
+BackgroundImageShading=0.600000
 BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_FILLED
 EOF
 
