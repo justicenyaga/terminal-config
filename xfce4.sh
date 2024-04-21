@@ -1,18 +1,10 @@
 #!/bin/bash
 
-font="CodeNewRomanNerdFontMono-Regular.otf"
-fonts_dir="$HOME/.local/share/fonts"
+# Install font
+chmod +x font.sh
+./font.sh
+
 terminal_dir="$HOME/.config/xfce4/terminal"
-
-# Check if fonts directory exists
-if [ ! -d "$fonts_dir" ]; then
-    mkdir -p "$fonts_dir"
-fi
-
-# Copy the font to the fonts directory
-if [ ! -f "$fonts_dir/$font" ]; then
-    cp "$(pwd)/$font" "$fonts_dir"
-fi
 
 # Check if terminal configuration directory exists
 if [ ! -d "$terminal_dir" ]; then
@@ -29,7 +21,7 @@ cp "$(pwd)/accels.scm" "$terminal_dir"
 background_image="$(pwd)/images/background-5.jpg"
 cat > "$terminal_dir/terminalrc" <<EOF
 [Configuration]
-FontName=CodeNewRoman Nerd Font Mono 14
+FontName=Lilex Nerd Font Mono 13
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE

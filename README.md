@@ -44,7 +44,7 @@ This will overwrite the default shortcut that launches gnome-terminal.
 Run the setup script to configure xfce4 terminal
 
 ```bash
-cd terminal-config && sh setup.sh
+cd terminal-config && sh xfce4.sh
 ```
 
 ## Gnome Terminal
