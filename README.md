@@ -1,11 +1,20 @@
 # My Terminal Configurations
 
-This repository contains my terminal configuration setups for xfce4 and gnome terminal.
+This repository contains my terminal configuration setups for kitty, xfce4 and gnome terminal emulators.
 
 ## Clone the repo
 
 ```bash
 git clone https://github.com/justicenyaga/terminal-config.git
+cd terminal-config
+```
+
+## Kitty Terminal
+
+Run the setup script to install and configure kitty terminal emulator.
+
+```bash
+sh kitty.sh
 ```
 
 ## xfce4 Terminal
@@ -44,7 +53,7 @@ This will overwrite the default shortcut that launches gnome-terminal.
 Run the setup script to configure xfce4 terminal
 
 ```bash
-cd terminal-config && sh xfce4.sh
+sh xfce4.sh
 ```
 
 ## Gnome Terminal
