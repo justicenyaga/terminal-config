@@ -26,11 +26,11 @@ fi
 if [ -f "$config_dir/theme.conf" ]; then
     rm "$config_dir/theme.conf"
 fi
-if [ -f "$config_dir/background.png" ]; then
-    rm "$config_dir/background.png"
+if [ -f "$config_dir/background-1.png" ]; then
+    rm "$config_dir/background-1.png"
 fi
 
 # Copy config files
 cp "$(pwd)/kitty/kitty.conf" "$config_dir"
 cp "$(pwd)/kitty/theme.conf" "$config_dir"
-cp "$(pwd)/kitty/background.png" "$config_dir"
+cp "$(pwd)/kitty/background-1.png" "$config_dir"
