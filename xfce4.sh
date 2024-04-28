@@ -12,16 +12,13 @@ if [ ! -d "$terminal_dir" ]; then
 fi
 
 # Copy accels.scm file
-if [ -f "$terminal_dir/accels.scm" ]; then
-    rm "$terminal_dir/accels.scm"
-fi
 cp "$(pwd)/accels.scm" "$terminal_dir"
 
 # Generate the terminalrc config file
 background_image="$(pwd)/images/background-5.jpg"
 cat > "$terminal_dir/terminalrc" <<EOF
 [Configuration]
-FontName=Lilex Nerd Font Mono 13
+FontName=CaskaydiaCove Nerd Font Mono 13
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBellUrgent=FALSE
